@@ -42,39 +42,4 @@ class BaseService
 
         return $baseQuery;
     }
-
-    protected function call($method, $url, $data, $token = null)
-    {
-
-        $headers = [
-            'Authorization' => $token,
-            'Accept'        => 'application/json'
-        ];
-
-        $client = new \GuzzleHttp\Client();
-
-        if ($method == 'GET')
-        {
-            $parameters = [
-                'headers' => $headers
-            ];
-        }
-        else
-        {
-            $parameters = [
-                'auth'        => [ config('app.package_user'), config('app.package_pass') ],
-                'headers'     => $headers, 
-                'form_params' => $data
-            ];
-        }
-
-        $response = $client->request($method, $url, $parameters);
-
-        if ($response->getStatusCode() != 200) 
-        {
-            return response('Unauthorized.', 401);
-        }
-
-        return json_decode($response->getBody());
-    }
 }
