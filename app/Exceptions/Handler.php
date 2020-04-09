@@ -96,12 +96,12 @@ class Handler extends ExceptionHandler
                 'message' => $message,
             ], $status);
         } else {
-            $trace = (string) json_encode($e->getTrace(), true) == "" ? "" : json_decode((string) json_encode($e->getTrace(), true));
+            // $trace = (string) json_encode($e->getTrace(), true) == "" ? "" : json_decode((string) json_encode($e->getTrace(), true));
             return response()->json([
                 'success' => false,
                 'status'  => $status,
                 'message' => $message,
-                'trace'   => $trace
+                // 'trace'   => $trace
             ], $status);
         }
     }
