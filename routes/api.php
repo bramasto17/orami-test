@@ -20,5 +20,5 @@ $router->get('/ping', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api'], function($router) {
-		// $router->post('login', ['uses' => 'AuthController@login']);
+		$router->get('products', ['uses' => 'ProductsController@getAll']);
 });
