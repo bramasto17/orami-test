@@ -1,21 +1,58 @@
-# Lumen PHP Framework
+# Weight Data
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+[![Github](https://cdn.iconscout.com/icon/free/png-32/github-153-675523.png)](https://github.com/bramasto17)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+This code is built in PHP Laravel Framework with purpose to apply for the position Backend Developer at Orami
 
-## Official Documentation
+### Installation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Requires [PHP](https://php.net/) v7.1+ to run.
 
-## Security Vulnerabilities
+Install the dependencies.
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+```sh
+$ cd orami-test
+$ composer install
+```
 
-## License
+Setup the environment...
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```sh
+$ cp .env.example .env
+```
+
+Run the migration...
+
+```sh
+$ php artisan migrate
+```
+
+Run the seeder...
+
+```sh
+$ php artisan db:seed
+```
+
+Run the program...
+
+```sh
+php -S localhost:8000 -t public
+```
+
+### About Me
+
+My name is Bramasto Wibisono, I'm from Tangerang, Indonesia. I graduated from university on February 2019. Even though I just started my career after graduation for a year, personally I feel like I already have a lot of knowledge about this industry and this position from my current company. Since December 2018, I've been working at a startup called Umroh.com as a Backend Developer. There I develop the backend system for the website and mobile applications. The system is developed with microservice infrastructure using Laravel and Lumen and deployed to AWS. I have fully knowledge to the techonologies used and good analytics and problem solving. 
+
+So far my skills and projects are mostly developed with PHP especially Laravel and Lumen. But I don't think programming language is a boundary to what I can accomplish. I enjoy develop projects that challanges me to explore my knowledge and creativity, that way I won't find my job boring. Below is some of my personal projects that I have done.
+
+| Projects | Github Repo |
+| ------ | ------ |
+| Omarina | [https://github.com/bramasto17/omarina](https://github.com/bramasto17/omarina) |
+| Movie-Biz | [https://github.com/bramasto17/MovieBiz---Thesis](https://github.com/bramasto17/MovieBiz---Thesis) |
+| DSS Recruitment | [https://github.com/bramasto17/dss-recruitment](https://github.com/bramasto17/dss-recruitment) |
+| Fabelio Scraper | [https://github.com/bramasto17/fabelio-scraper](https://github.com/bramasto17/fabelio-scraper) |
+
+### Find Me On
+[Github](https://github.com/bramasto17/)
+[LinkedIn](https://www.linkedin.com/in/bramasto-wibisono/)
+[My CV](https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/6b7dd9176b32e24b99e797b184dfe4f9.pdf)
